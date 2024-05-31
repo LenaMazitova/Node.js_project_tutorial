@@ -1,0 +1,9 @@
+<%- include ('head'); -%>
+    <% for (key in articles) { %>
+        <li>
+            <a href="/articles/<%= articles[key] %>">
+                <%= articles[key] %>
+            </a>
+        </li>
+        <% } %>
+            <%- include ('foot'); -%>
